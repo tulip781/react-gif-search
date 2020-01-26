@@ -42,7 +42,7 @@ class App extends Component {
           </div>
         </div>
         <div className="right-scene">
-          <GifList gifs={this.state.gifs} currentGifFunction={this.currentGif} />
+          <GifList gifs={this.state.gifs} currentGif={this.currentGif} />
         </div>
       </div>
     );

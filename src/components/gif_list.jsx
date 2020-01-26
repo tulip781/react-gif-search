@@ -3,12 +3,10 @@ import React, { Component } from 'react';
 import Gif from './gif.jsx';
 
 class GifList extends Component {
-  updater = () => {
-    console.log(this.props.currentGifFunction(this.id));
-  }
+
 
   renderList = () => {
-    return this.props.gifs.map(gif => <Gif id={gif.id} key={gif.id} onClick={this.updater} />);
+    return this.props.gifs.map(gif => <Gif id={gif.id} key={gif.id} currentGif={this.props.currentGif} />);
   }
 
 
